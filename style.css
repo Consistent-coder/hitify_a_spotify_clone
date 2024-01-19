@@ -1,0 +1,247 @@
+
+
+body{
+    /*css reset*/
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: max-content;
+    overflow-x: hidden;
+}
+.logo>img{
+    width: 40px;
+    margin-top: 0px;
+    filter:sepia();
+}
+.icon{
+ filter:sepia();
+ border-radius: 50%;
+}
+ nav>ul{
+    display:flex;
+    gap:50px;
+    list-style: none;
+    text-align: center; 
+    flex-wrap: wrap;
+}
+.logo{
+    position: relative;
+    bottom: 10px;
+}
+.logo>p{
+    text-align: center;
+    display: inline;
+    position: relative;
+    bottom: 15px; 
+    margin-left: 5px;
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+nav{
+    border-radius: 100px;
+    background-color: rgba(18, 214, 248, 0.328);
+    color: white;
+    border: 2px solid deepskyblue;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    /*font-family: 'Varela Round', sans-serif;*/
+    overflow: hidden;
+}
+nav p,li,img{
+    cursor: pointer;
+}
+body{
+    /*css reset*/
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(125deg,rgb(72, 150, 202),white,blue);
+}
+.container{
+    margin: auto;
+    height: max-content;
+    border-radius: 50px;
+    background: url('./bg2.avif');
+    background-position-x: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    width: 70%;
+    padding-bottom: 20px;
+}
+.musicplay{
+    font-size: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.songplay img{
+    width: 50px;
+    margin: 12px 5px;
+    border-radius: 320px;
+}
+.songplay svg{
+    margin: 0px;
+    padding: 0px;
+}
+.songplay{
+    position: relative;
+    display:flex;
+    justify-content: start;
+    height: max-content;
+    width: 60%;
+
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    border: 5px solid rgba(0, 0, 255, 0.431);
+    align-items: center;
+    color: black;
+    border-radius: 100px;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.playbar{
+    /*content: "";*/
+    position: sticky;
+    bottom: 0px;
+    background-color: black;
+    margin-top: 100px;
+    width: 100%;
+    /*z-index: -3;*/
+   /* opacity: 0.3;*/
+}
+#myProgressBar{
+    width: 85vw;
+    margin: 10px 7vw;
+}
+
+.play{
+  
+    width: 80px;
+    height: 80px;
+    padding: 0px 10px;
+}
+.player{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player svg{
+    cursor: pointer;
+}
+/*#cir{
+    width: 100px;
+    height:100px;
+}*/
+.icons{
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+   flex-wrap: nowrap;
+}
+.timestamp{
+    position: relative;
+    bottom: 7px;
+    padding: 5px;
+}
+.containersong{
+    margin-top: 50px;
+}
+.gif{
+    /*position: absolute;
+    left: 80px;
+    top:2px;*/
+    color:aliceblue;
+    margin-top: 30px;
+}
+#gif{
+  /*  position: absolute;
+    top: 42px;
+    left: 206px;*/
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.hide{
+    display: none;
+    opacity: 0;
+}
+#PlaybarSongname{
+    color: white;
+    font-size: 24px;
+    color: white;
+    font-size: 24px;
+    /*position: absolute;
+    bottom: 49px;
+    left: 285px;*/
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1000px) {
+    .songplay{
+        width: 95%;
+    }
+    .playbar{
+        width: 96%;
+    }
+    .flex{
+        flex-direction: column;
+        width: 96%;
+    }
+    .icons{
+        width: 96%;
+    }
+}
+@media (max-width:500px) {
+    .container{
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .songplay{
+        width: 95%;
+    }
+    .play{
+    height: 40px;
+    width: 40px;
+    }
+    .gif{
+        margin-top: 10px;
+    }
+    #gif{
+        height:  5px;
+    }
+    .playbar{
+        width: 96%;
+    }
+    .flex{
+        width: 96%;
+        flex-direction: column;
+    }
+    .icons{
+        width: 96%;
+    }
+}
+.playbar button{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.glassy-element {
+    background: linear-gradient(to bottom, #0fc4ac, #30c0e4);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: white; /* Set text color to be visible on the glassy background */
+  }
+  
+  
